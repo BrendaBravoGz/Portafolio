@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+body{
+    background-image: url("imagenes/background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position:top center;   
+}
+.topnav {
+    
+    overflow: hidden;
+    background-color: #82ADDD; 
+    width: auto;
+    box-shadow:  0 10px 10px 0 rgba(124, 124, 124, 0.5); 
+}
+.nav{
+    padding-left: 40%;
+}
+.topnav a {   
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Sanchez';
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    float:left;
+    padding:10px;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 18px;
+}  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}  
+.topnav .icon {
+    display: none;
+}
+.name{
+    font-family: 'Sacramento';
+    font-size: 80px;
+    text-align: center;
+    color: #ffffff;
+}
+.carrera{
+    font-family: 'Sanchez';
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+img{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+#page-inicio img{
+    animation: float 6s ease-in-out infinite;
+    border-radius: 50%;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+.boton-cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: #698AB1;
+    width: 150px;
+    height: 30px;
+    font-family: 'Sanchez';
+    font-size: 16px;
+    color: #ffffff;
+    box-shadow:  0 4px 8px 0 rgb(0,0,0,.2);
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    border: none;
+}
+.fa-chevron-down{
+    box-shadow:  0 4px 8px 0 rgb(0,0,0,.2);
+    color: #ffffff;
+    padding: 4px 10px 6px 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #516881;
+}
+.linea1{
+    background-color: black;
+    height: 1px;
+    width: 900px;
+    margin:auto;
+    margin-top: 100px;
+}
+.linea2{
+    background-color: black;
+    height: 1px;
+    width: 900px;
+    margin:auto;
+}
+.titulo{
+    font-family: 'Sanchez';
+    writing-mode: tb-rl;
+    font-size: 30px;
+    margin-left: 10%;
+    margin:auto;
+}
+.subtitulo{
+    font-family: 'Sanchez';
+    font-size: 20px;
+    margin-left: 10%;
+    margin:auto;
+}
+.contenedor{
+    display: flex;
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+.parrafos{
+    margin:auto;
+    width: 800px;
+    margin-left: 0px;
+    font-family: 'Sanchez';
+    text-align: justify;
+    font-size: 17px;
+}
+.parrafosinalineacion{
+    margin-left: 10%;
+    width: 800px;
+    font-family: 'Sanchez';
+    font-size: 15px;
+}
+.parrafointeres{
+    font-family: 'Sanchez';
+    font-family:15px;
+    color: #ffffff;
+}
+.skills{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.fa-html5, .fa-css3-alt, .fa-python, .fa-php, .fa-r-project, .fa-figma, .fa-java, .fa-js-square{
+    font-size: 100px;
+    margin: auto;
+}
+.contacto{
+    margin: auto;
+    width: 75%;
+
+}
+.informacion{
+    display: flex;
+}
+i{
+    margin-right: 10px;
+}
+
+.iconos-href{
+    color: black;
+}
+.fila{
+    margin: auto;
+    width: 75%;
+}
+.fa-code{
+    font-size: 14px;
+    color: #b4c1d1;
+}
+.card{
+    box-shadow:  0 4px 8px 0 rgb(0,0,0,.2);
+    padding: 15px;
+    text-align: center;
+    background-color: #f8f8f8;
+    position: relative;
+    z-index: 1;
+}
+.columna .card .fa-python{
+    display: none;
+}
+.columna .card .fa-html5 {
+    display: none;
+}
+.columna .card .fa-css3-alt {
+    display: none;
+}
+.columna .card .fa-js-square {
+    display: none;
+}
+#page-proyectos .card::after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background: #516881;
+    z-index: -1;
+    opacity: 0.95;
+    transition: transform 0.3s;
+}
+#page-proyectos .card:hover > .fa-js-square{
+    display: block;
+    position: absolute;
+    left:120px;
+    top:140px;
+}
+#page-proyectos .card:hover > .fa-html5{
+    display: block;
+    position: absolute;
+    left: 30px;
+    top:140px;
+}
+ #page-proyectos .card:hover > .fa-css3-alt{
+    display: block;
+    position: absolute;
+    left: 230px;
+    top:140px;
+}
+#page-proyectos .card:hover > .fa-python{
+    display: block;
+    position: absolute;
+    left: 120px;
+    top:140px;
+}
+.card:hover > .img-proyecto{
+    opacity: 0.2;
+}
+#page-proyectos .card:hover::after{
+    transform: scaleY(1);
+}
+.inferior-card{
+    box-shadow:  0 4px 8px 0 rgb(0,0,0,.2);
+    background-color: #698AB1;
+    text-align: center;
+    padding: 10px;
+}
+.columna{
+    float: left;
+    width: 45%;
+    padding: 10px 10px;
+}
+.columna-skills
+{
+    float: left;
+    width: 20%;
+    padding: 10px 10px;
+}
+.img-proyecto{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    *{
+        align-content: center;
+    }
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left; 
+    }
+    .nav{
+        padding-left: 0%;
+    }
+    .topnav{
+        width: 100%;
+    }
+    body{   
+        background-image: none;
+    }
+
+    .parrafos , .parrafosinalineacion{
+      font-size: 10px;
+      margin:auto;
+    }
+    .contenedor , .parrafosinalineacion{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .parrafointeres{
+        font-size: 9px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .subtitulo{
+        font-size: 15px;
+    }
+    .carrera{
+        font-size: 12px;
+        margin-bottom: 30px;
+        color:black;
+    }
+    .name{
+        font-size: 40px;
+        color:black;
+    }
+    .linea1 , .linea2{
+        width: 250px;
+        margin:auto;
+        align-content: center;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        margin-top: 5px;
+    }
+    .columna {
+        width: 90%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    .columna-skills{
+        width: 40%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .skills{
+        width: 50px;
+        height: 50px;
+        margin: auto;
+    }
+    .fa-html5, .fa-css3-alt, .fa-python, .fa-php, .fa-r-project, .fa-figma, .fa-java, .fa-js-square{
+        font-size: 50px;
+        margin: auto;
+    }
+    .fa-code{
+        display:none !important;
+        text-align: center;
+    }
+    #page-proyectos .card:hover > .fa-js-square{
+        left:100px;
+    }
+    #page-proyectos .card:hover > .fa-html5{
+        left: 30px;
+    }
+     #page-proyectos .card:hover > .fa-css3-alt{
+        left: 200px;
+    }
+    #page-proyectos .card:hover > .fa-python{
+        left: 100px;
+    }
+  }

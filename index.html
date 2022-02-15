@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+</head>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+<body>
+    <!-- Menú  -->
+    <div class="topnav" id="myTopnav">
+        <div class="nav">
+            <a href="#page-inicio">Inicio</a> 
+            <a href="#page-sobremi">Sobre mi</a>  
+            <a href="#page-skills">Skills</a> 
+            <a href="#page-proyectos">Proyectos</a>
+            <a href="#page-contacto">Contacto</a>    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+    </div>
+    <br><br>
+    <scroll-container>
+        <!--  Presentación  -->
+        <scroll-page id="page-inicio">
+            <img src="imagenes/profile.png">
+            <p class="name">Brenda Bravo</p>
+            <p class="carrera">Ing. Tecnología de Software</p>
+            <div class="linea1"> </div>
+        </scroll-page>
+    <br>
+        <scroll-page id="page-sobremi">
+            <div class="contenedor">
+                <p class="titulo">Sobre mi</p>
+                <p class="parrafos">Soy una persona creativa, comprometida con el trabajo y habilidades de trabajo en equipo, tengo una gran pasión por las nuevas tecnologías y el desarrollo de estas, así como estar en constante actualización para tener un mejor desarrollo profesional.</p> 
+            </div>
+            <!-- Descargar CV  -->
+            <div class="boton-cv">
+                <a href="Documentos/CV Brenda Cecilia Bravo González.pdf" download="CV Brenda Cecilia Bravo González.pdf">
+                <button>Descargar CV </button><i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+            
+            
+        </scroll-page>
+        <br>    
+        <div class="linea2"> </div>
+        <br>
+        <!-- Área de skills -->
+        <scroll-page id="page-skills">
+            <div class="contenedor">
+                <p class="titulo">Skills</p>
+                    <div class="fila">
+                        <!-- Skills - HTML5 -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                        </div>
+                        <!-- Skills -CSS3         -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                        </div>
+                        <!-- Skills - JS -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                        </div>
+                        <!-- Skills -Python -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <i class="fab fa-python"></i>
+                            </div>
+                        </div>
+                        <!-- Skills - PHP  -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <i class="fab fa-php"></i>
+                            </div>
+                        </div>
+                        <!-- Skills - R  -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <i class="fab fa-r-project"></i>
+                            </div>
+                        </div>
+                        <!-- Skills - Java -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <i class="fab fa-java"></i>
+                            </div>
+                        </div>
+                        <!-- Skills - C  -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <img class="skills" src="imagenes/skills/C.png">
+                            </div>
+                        </div>
+                        <!-- Skills - Figma  -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                        </div>               
+                        <!-- Skills - Firebase          -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <img class="skills" src="imagenes/skills/firebase.png">
+                            </div>
+                        </div>
+                        <!-- Skills - MySQL -->
+                        <div class="columna-skills">
+                            <div class="card">
+                                <img class="skills" src="imagenes/skills/mysql.png">
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </scroll-page>
+        <br>
+        <div class="linea2"> </div>
+        <br>
+        <!-- Área proyectos  -->
+        <scroll-page id="page-proyectos">
+            <div class="contenedor">
+                <p class="titulo">Proyectos</p>
+                <div class="fila">
+                    <!-- Proyecto-JuegoGato -->
+                    <div class="columna">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js-square"></i>
+                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-juegogato.png">
+                        </div>
+                        <div class="inferior-card">
+                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Juego-Gato"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class ="iconos-href" href="https://brendabravogz-juegogato.netlify.app/"> <i class="far fa-eye"></i> </a>
+                          </div>
+                    </div>
+                    <!-- Proyecto - IMC -->
+                    <div class="columna">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js-square"></i>
+                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-imc.png">
+                        </div>
+                        <div class="inferior-card">
+                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Calculadora-imc"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class ="iconos-href" href="https://brendabravogz-calculadora-imc.netlify.app/"> <i class="far fa-eye"></i> </a>
+                          </div>
+                    </div>
+                    <!-- Proyecto - Replica facebook -->
+                    <div class="columna">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-facebook.png">
+                        </div>
+                        <div class="inferior-card">
+                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Replica-facebook"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class ="iconos-href" href="https://brendabravogz-replica-facebook.netlify.app/"> <i class="far fa-eye"></i> </a>
+                          </div>
+                    </div>
+                    <!-- Proyecto - Portafolio -->
+                    <div class="columna">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js-square"></i>
+                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-portafolio.png">
+                        </div>
+                        <div class="inferior-card">
+                            <a class="iconos-href" href="https://github.com/BrendaBravoGz"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class="iconos-href" href="https://www.behance.net/gallery/134316147/Portafolio"><i class="fab fa-behance"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class ="iconos-href" href="https://brendabravogzlogin.netlify.app/"> <i class="far fa-eye"></i> </a>
+                          </div>
+                    </div>
+                    <!-- Proyecto - Login Spiderman  -->
+                    <div class="columna">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-login-web.png">
+                        </div>
+                        <div class="inferior-card">
+                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Login-Signup"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class="iconos-href" href="https://www.behance.net/gallery/134534575/Practica-sitio-web"><i class="fab fa-behance"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class ="iconos-href" href="https://brendabravogz-loginspiderman.netlify.app/"> <i class="far fa-eye"></i> </a>
+                          </div>
+                    </div>
+                    <!-- Proyecto - Calendario -->
+                    <div class="columna">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-calendario.png">
+                        </div>
+                        <div class="inferior-card">
+                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Calendario"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class="iconos-href" href="https://www.behance.net/gallery/135836577/Calendario"><i class="fab fa-behance"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class ="iconos-href" href="https://brendabravogzcalendario.netlify.app/"> <i class="far fa-eye"></i> </a>
+                        </div>
+                    </div>
+                    <!-- Proyecto - Titanic  -->
+                    <div class="columna">
+                        <div class="card">
+                            <i class="fab fa-python"></i>
+                            <img class ="img-proyecto" src="imagenes/Proyectos/programación-titanic.png">
+                        </div>
+                        <div class="inferior-card">
+                            <i class="fas fa-code"></i>
+                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Ticanic"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-code"></i>
+                          </div>
+                    </div>
+                    <!-- Proyecto - GameBoy -->
+                    <div class="columna">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-gameboy.png">
+                        </div>
+                        <div class="inferior-card">
+                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/GameBoy"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class="iconos-href" href="https://www.behance.net/gallery/135576837/GameBoy"><i class="fab fa-behance"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class ="iconos-href" href="https://brendabravogz-gameboy.netlify.app/"> <i class="far fa-eye"></i> </a>
+                        </div>
+                    </div>
+                    <!-- Proyecto - Switch -->
+                    <div class="columna">
+                        <div class="card">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-switch.png">
+                        </div>
+                        <div class="inferior-card">
+                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Switch"><i class="fab fa-github"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class="iconos-href" href="https://www.behance.net/gallery/136008325/Nintendo-Switch"><i class="fab fa-behance"></i></a>
+                            <i class="fas fa-code"></i>
+                            <a class ="iconos-href" href="https://brendabravogz-switch.netlify.app/"> <i class="far fa-eye"></i> </a>
+                        </div>
+                    </div>
+                  </div>
+
+            </div>
+        </scroll-page>
+        <br>
+        <div class="linea2"></div>
+        <br>
+        <scroll-page id="page-contacto">
+            <!-- Área de contacto -->
+            <div class="contenedor">
+                <p class="titulo">Contacto</p>
+                <div class="contacto">
+                   <!-- Contacto - teléfono -->
+                    <div class="informacion">
+                        <i class="fas fa-mobile-alt">  </i>
+                        <p class="parrafos">81-2934-2920</p>
+                    </div>
+                    <br>
+                    <!-- Contacto - correo -->
+                    <div class="informacion">
+                        <i class="fas fa-at"></i>
+                        <p class="parrafos">ceci.bravo@live.com.mx</p>
+                    </div>
+                    <br>
+                    <!--Contacto - ubicación-->
+                    <div class="informacion">
+                        <i class="fas fa-map-pin"></i>
+                        <p class="parrafos">Apodaca, Nuevo León, México</p>
+                    </div>
+                    <br>
+                    <!-- Contacto - github -->
+                    <div class="informacion">
+                        <a class="iconos-href" href="https://github.com/BrendaBravoGz"><i class="fab fa-github"></i></a>
+                        <p class="parrafos">@BrendaBravoGz</p>
+                    </div>
+                    <br>
+                    <!-- Contacto - behance -->
+                    <div class="informacion">
+                        <a class="iconos-href" href="http://be.net/BrendaBravoGz"><i class="fab fa-behance"></i></a>
+                        <p class="parrafos">@BrendaBravoGz</p>
+                   </div>
+                   <br>
+                   <!-- Contacto - linkedin -->
+                    <div class="informacion">
+                        <a class="iconos-href" href="www.linkedin.com/in/BrendaBravoGz"><i class="fab fa-linkedin-in"></i></a>
+                        <p class="parrafos">@BrendaBravoGz</p>
+                   </div>
+                </div>
+            </div>
+        </scroll-page>
+        <br>
+        <div class="linea2"> </div>
+        <br>
+    </scroll-container>
+</body>
+</html>
