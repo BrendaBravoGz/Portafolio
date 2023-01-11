@@ -1,318 +1,301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <title>Portafolio</title>
-    <link rel="stylesheet" href="estilos.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <link rel="shortcut icon" href="imagenes/astronaut.ico" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-</head>
-<script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
-<body>
-    <!-- Menú  -->
-    <div class="topnav" id="myTopnav">
-        <div class="nav">
-            <a href="#page-inicio">Inicio</a> 
-            <a href="#page-sobremi">Sobre mi</a>  
-            <a href="#page-skills">Skills</a> 
-            <a href="#page-proyectos">Proyectos</a>
-            <a href="#page-contacto">Contacto</a>    
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="font-family: 'Sacramento'">Brenda Bravo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Inicio </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body>
+    <img class="img-perfil" src="imagenes/profile.png">
+    <h1 class="text-center display-2" style="font-family: 'Sacramento'">Brenda Bravo</h1>
+    <h4 class="text-center" style="font-family: 'Sanchez'">Ing. Tecnología de Software</h4>
+
+    <h6 class="text-center" style="font-family: 'Sanchez'"> <i class="fas fa-map-marker-alt"></i> Apodaca, Nuevo Léon </i>   </h6>
+
+    <div class="container">
+      <hr style="border-width:2px; background-color: #252525;">
+        <div class="row" style="background-color: #f6f6f6; padding: 2%; margin:2%">
+          <div class="col-sm-12">
+            <p class="text-center" style="font-size: 28px; font-family: 'Sanchez'">Sobre mi</p>
+            <p style="font-size: 18px;" class="text-justify">Soy una persona creativa, comprometida con el trabajo y habilidades de trabajo en equipo, tengo una gran pasión por las nuevas tecnologías y el desarrollo de estas, así como estar en constante actualización para tener un mejor desarrollo profesional.</p> 
+          </div>
+          <div class="boton-cv">
+            <a href="Documentos/Brenda Bravo CV.pdf" download="Brenda Bravo CV.pdf">
+              Descargar CV 
             </a>
         </div>
-
-    </div>
-    <br><br>
-    <scroll-container>
-        <!--  Presentación  -->
-        <scroll-page id="page-inicio">
-            <img src="imagenes/profile.png">
-            <p class="name">Brenda Bravo</p>
-            <p class="carrera">Ing. Tecnología de Software</p>
-        </scroll-page>
-    <br>
-        <scroll-page id="page-sobremi">
-            <div class="contenedor">
-                <p class="titulo">Sobre mi</p>
-                <p class="parrafos">Soy una persona creativa, comprometida con el trabajo y habilidades de trabajo en equipo, tengo una gran pasión por las nuevas tecnologías y el desarrollo de estas, así como estar en constante actualización para tener un mejor desarrollo profesional.</p> 
-            </div>            
-        </scroll-page>
-            <!-- Descargar CV  -->
-            <div class="boton-cv">
-                <a href="Documentos/Brenda Bravo CV.pdf" download="Brenda Bravo CV.pdf">
-                Descargar CV <i class="fas fa-chevron-down"></i>
-                </a>
+        </div>
+      <hr style="border-width:2px; background-color: #252525;">
+      <!-- Contenedor Skills -->
+        <div class="row" style="background-color: #f6f6f6; padding: 2%; margin:2%">
+          <div class="col-sm-12">
+            <p class="text-center" style="font-size: 28px; font-family: 'Sanchez'">Skills</p>
+          </div>
+          <!-- Skills - HTML -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fab fa-html5"></i>   </h3>
+                <p class="card-text">Inetrmedio </p>
+              </div>
             </div>
-        <br>
-        <!-- Área de skills -->
-        <scroll-page id="page-skills">
-            <div class="contenedor">
-                <p class="titulo">Skills</p>
-                    <div class="fila">
-                        <!-- Skills - HTML5 -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                        </div>
-                        <!-- Skills -CSS3         -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                        </div>
-                        <!-- Skills - JS -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                        </div>
-                        <!-- Skills -Python -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <i class="fab fa-python"></i>
-                            </div>
-                        </div>
-                        <!-- Skills - PHP  -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <i class="fab fa-php"></i>
-                            </div>
-                        </div>
-                        <!-- Skills - R  -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <i class="fab fa-r-project"></i>
-                            </div>
-                        </div>
-                        <!-- Skills - Java -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <i class="fab fa-java"></i>
-                            </div>
-                        </div>
-                        <!-- Skills - C  -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <img class="skills" src="imagenes/skills/C.png">
-                            </div>
-                        </div>
-                        <!-- Skills - Figma  -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <i class="fab fa-figma"></i>
-                            </div>
-                        </div>               
-                        <!-- Skills - Firebase          -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <img class="skills" src="imagenes/skills/firebase.png">
-                            </div>
-                        </div>
-                        <!-- Skills - MySQL -->
-                        <div class="columna-skills">
-                            <div class="card">
-                                <img class="skills" src="imagenes/skills/mysql.png">
-                            </div>
-                        </div>
-                    </div>
-                    
+          </div>
+          <!-- Skills - CSS3 -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fab fa-css3-alt"></i> </h3>
+                <p class="card-text">Intermedio</p>
+              </div>
             </div>
-        </scroll-page>
-
-        <br>
-        <!-- Área proyectos  -->
-        <scroll-page id="page-proyectos">
-            <div class="contenedor">
-                <p class="titulo">Proyectos</p>
-                <div class="fila">
-                    <!-- Proyecto-JuegoGato -->
-                    <div class="columna">
-                        <div class="card">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-juegogato.png">
-                        </div>
-                        <div class="inferior-card">
-                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Juego-Gato"><i class="fab fa-github"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class ="iconos-href" href="https://brendabravogz-juegogato.netlify.app/"> <i class="far fa-eye"></i> </a>
-                          </div>
-                    </div>
-                    <!-- Proyecto - IMC -->
-                    <div class="columna">
-                        <div class="card">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-imc.png">
-                        </div>
-                        <div class="inferior-card">
-                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Calculadora-imc"><i class="fab fa-github"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class ="iconos-href" href="https://brendabravogz-calculadora-imc.netlify.app/"> <i class="far fa-eye"></i> </a>
-                          </div>
-                    </div>
-                    <!-- Proyecto - Replica facebook -->
-                    <div class="columna">
-                        <div class="card">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-facebook.png">
-                        </div>
-                        <div class="inferior-card">
-                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Replica-facebook"><i class="fab fa-github"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class ="iconos-href" href="https://brendabravogz-replica-facebook.netlify.app/"> <i class="far fa-eye"></i> </a>
-                          </div>
-                    </div>
-                    <!-- Proyecto - Portafolio -->
-                    <div class="columna">
-                        <div class="card">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-portafolio.png">
-                        </div>
-                        <div class="inferior-card">
-                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Portafolio"><i class="fab fa-github"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class="iconos-href" href="https://www.behance.net/gallery/134316147/Portafolio"><i class="fab fa-behance"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class ="iconos-href" href="https://brendabravogz.netlify.app/"> <i class="far fa-eye"></i> </a>
-                          </div>
-                    </div>
-                    <!-- Proyecto - Login Spiderman  -->
-                    <div class="columna">
-                        <div class="card">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-login-web.png">
-                        </div>
-                        <div class="inferior-card">
-                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Login-Signup"><i class="fab fa-github"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class="iconos-href" href="https://www.behance.net/gallery/134534575/Practica-sitio-web"><i class="fab fa-behance"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class ="iconos-href" href="https://brendabravogz-loginspiderman.netlify.app/"> <i class="far fa-eye"></i> </a>
-                          </div>
-                    </div>
-                    <!-- Proyecto - Calendario -->
-                    <div class="columna">
-                        <div class="card">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-calendario.png">
-                        </div>
-                        <div class="inferior-card">
-                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Calendario"><i class="fab fa-github"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class="iconos-href" href="https://www.behance.net/gallery/135836577/Calendario"><i class="fab fa-behance"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class ="iconos-href" href="https://brendabravogzcalendario.netlify.app/"> <i class="far fa-eye"></i> </a>
-                        </div>
-                    </div>
-                    <!-- Proyecto - Titanic  -->
-                    <div class="columna">
-                        <div class="card">
-                            <i class="fab fa-python"></i>
-                            <img class ="img-proyecto" src="imagenes/Proyectos/programación-titanic.png">
-                        </div>
-                        <div class="inferior-card">
-                            <i class="fas fa-code"></i>
-                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Ticanic"><i class="fab fa-github"></i></a>
-                            <i class="fas fa-code"></i>
-                          </div>
-                    </div>
-                    <!-- Proyecto - GameBoy -->
-                    <div class="columna">
-                        <div class="card">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-gameboy.png">
-                        </div>
-                        <div class="inferior-card">
-                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/GameBoy"><i class="fab fa-github"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class="iconos-href" href="https://www.behance.net/gallery/135576837/GameBoy"><i class="fab fa-behance"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class ="iconos-href" href="https://brendabravogz-gameboy.netlify.app/"> <i class="far fa-eye"></i> </a>
-                        </div>
-                    </div>
-                    <!-- Proyecto - Switch -->
-                    <div class="columna">
-                        <div class="card">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <img class ="img-proyecto" src="imagenes/Proyectos/programacion-switch.png">
-                        </div>
-                        <div class="inferior-card">
-                            <a class="iconos-href" href="https://github.com/BrendaBravoGz/Switch"><i class="fab fa-github"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class="iconos-href" href="https://www.behance.net/gallery/136008325/Nintendo-Switch"><i class="fab fa-behance"></i></a>
-                            <i class="fas fa-code"></i>
-                            <a class ="iconos-href" href="https://brendabravogz-switch.netlify.app/"> <i class="far fa-eye"></i> </a>
-                        </div>
-                    </div>
-                  </div>
-
+          </div>
+          <!-- Skills - JS -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"> <i class="fab fa-js-square"></i> </h3>
+                <p class="card-text">Intermedio</p>
+              </div>
             </div>
-        </scroll-page>
+          </div>
+          <!-- Skills - PHP -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"> <i class="fab fa-php"></i> </h3>
+                <p class="card-text">Intermedio</p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills - MySql -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"> <img style="width: 100px;" src="imagenes/skills/mysql.png"/> </h3>
+                <p class="card-text">Intermedio</p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills - ReactJS -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"> <i class="fab fa-react"></i> </h3>
+                <p class="card-text">Básico</p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills - Python -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"> <i class="fab fa-python"></i> </h3>
+                <p class="card-text">Básico</p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills - Java -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"> <i class="fab fa-java"></i> </h3>
+                <p class="card-text">Básico</p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills - Github -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"> <i class="fab fa-github"></i> </h3>
+                <p class="card-text">Básico</p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills - Postman -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"> <img style="width: 100px;" src="imagenes/skills/postman.png"/> </h3>
+                <p class="card-text">Básico</p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills - Figma -->
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"> <i class="fab fa-figma"></i> </h3>
+                <p class="card-text">Intermedio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="border-width:2px; background-color: #252525;">
+        <!-- Contenedor Proyectos -->
+        <div class="row" style="background-color: #f6f6f6; padding: 2%; margin:2%">
+          <div class="col-sm-12">
+            <p class="text-center" style="font-size: 28px; font-family: 'Sanchez'">Proyectos</p>
+          </div>
+          <div class="card-columns">
+            <div class="card">
+              <img class="card-img-top" src="imagenes/Proyectos/programacion-juegogato.png" alt="">
+              <div class="card-body">
+                <p class="card-title">
+                  <p style="font-size: 18px; font-family: 'Sanchez'">Skills</p>
+                  <hr>
+                  <i style="font-size: 50px; padding: 10px;" class="fab fa-html5"></i>
+                  <i style="font-size: 50px; padding: 10px;" class="fab fa-css3-alt"></i>
+                  <i style="font-size: 50px; padding: 10px;" class="fab fa-js-square"></i>
+                  <hr>
+                </p>
+                <p class="card-text">
+                  <a style="text-decoration: none; color:#252525" href="https://github.com/BrendaBravoGz/Juego-Gato">
+                    <i style="font-size: 20px;" class="fab fa-github"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
 
-        <br>
-        <scroll-page id="page-contacto">
-            <!-- Área de contacto -->
-            <div class="contenedor">
-                <p class="titulo">Contacto</p>
-                <div class="contacto">
-                    <!-- Contacto - correo -->
-                    <div class="informacion">
-                        <i class="fas fa-at"></i>
-                        <p class="parrafos">ceci.bravo@live.com.mx</p>
-                    </div>
-                    <br>
-                    <!--Contacto - ubicación-->
-                    <div class="informacion">
-                        <i class="fas fa-map-pin"></i>
-                        <p class="parrafos">Apodaca, Nuevo León, México</p>
-                    </div>
-                    <br>
-                    <!-- Contacto - github -->
-                    <div class="informacion">
-                        <a class="iconos-href" href="https://github.com/BrendaBravoGz"><i class="fab fa-github"></i></a>
-                        <p class="parrafos">@BrendaBravoGz</p>
-                    </div>
-                    <br>
-                    <!-- Contacto - behance -->
-                    <div class="informacion">
-                        <a class="iconos-href" href="http://be.net/BrendaBravoGz"><i class="fab fa-behance"></i></a>
-                        <p class="parrafos">@BrendaBravoGz</p>
-                   </div>
-                   <br>
-                   <!-- Contacto - linkedin -->
-                    <div class="informacion">
-                        <a class="iconos-href" href="www.linkedin.com/in/BrendaBravoGz"><i class="fab fa-linkedin-in"></i></a>
-                        <p class="parrafos">@BrendaBravoGz</p>
-                   </div>
+            <div class="card">
+              <img class="card-img-top" src="imagenes/Proyectos/programacion-tiendaphp.png" alt="">
+              <div class="card-body">
+                <p class="card-title">
+                  <p style="font-size: 18px; font-family: 'Sanchez'">Skills</p>
+                  <hr>
+                  <div style="display: flex; justify-content: center; align-items: center;">
+                  <i style="font-size: 50px; padding: 10px;" class="fab fa-html5"></i>
+                  <i style="font-size: 50px; padding: 10px;" class="fab fa-css3-alt"></i>
+                  <i style="font-size: 50px; padding: 10px;" class="fab fa-php"></i>
+                  <img style="width: 50px;" src="imagenes/skills/mysql.png"/>
                 </div>
+                  <hr>
+                </p>
+                <p class="card-text">
+                  <a style="text-decoration: none; color:#252525" href="https://github.com/BrendaBravoGz/TiendaPHP">
+                    <i style="font-size: 20px;" class="fab fa-github"></i>
+                  </a>
+                </p>
+              </div>
             </div>
-        </scroll-page>
+            <div class="card">
+              <img class="card-img-top" src="imagenes/Proyectos/programacion-todolist.png" alt="">
+              <div class="card-body">
+                <p class="card-title">
+                  <p style="font-size: 18px; font-family: 'Sanchez'">Skills</p>
+                  <hr>
+                  <div style="display: flex; justify-content: center; align-items: center;">
+                  <i style="font-size: 50px; padding: 10px;" class="fab fa-react"></i>
+                  <i style="font-size: 50px; padding: 10px;" class="fab fa-html5"></i>
+                  <i style="font-size: 50px; padding: 10px;" class="fab fa-css3-alt"></i>
+                </div>
+                  <hr>
+                </p>
+                <p class="card-text">
+                  <a style="text-decoration: none; color:#252525" href="https://github.com/BrendaBravoGz/MyTodoList">
+                    <i style="font-size: 20px;" class="fab fa-github"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
 
-        <br>
-    </scroll-container>
-</body>
+
+          </div>
+        </div>
+        <hr style="border-width:2px; background-color: #252525;">
+        <div class="row" style="background-color: #f6f6f6; padding: 2%; margin:2%">
+          <div class="col-sm-12">
+            <p class="text-center" style="font-size: 28px; font-family: 'Sanchez'">Contacto</p>
+          </div>
+          <div class="col-sm-12">
+              <div class="screen" style="font-family: 'Sanchez'">
+                <div class="screen-header">
+                  <div class="screen-header-left">
+                    <div class="screen-header-button close"></div>
+                    <div class="screen-header-button maximize"></div>
+                    <div class="screen-header-button minimize"></div>
+                  </div>
+                  <div class="screen-header-right">
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                    <div class="screen-header-ellipsis"></div>
+                  </div>
+                </div>
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <div class="app-title">
+                      <span>Contacto</span>
+                    </div>
+                    <div class="app-contact">Información de contacto : ceci.bravo@live.com.mx</div>
+                  </div>
+                  <div class="screen-body-item">
+                    <form name="Contacto" method="post" data-netlify="true">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input class="app-form-control" name="Nombre" placeholder="Nombre">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" name="CorreoElectronico" placeholder="Correo electrónico">
+                      </div>
+                      <div class="app-form-group">
+                        <input class="app-form-control" name="NumeroContacto" placeholder="Número de contacto">
+                      </div>
+                      <div class="app-form-group message">
+                        <input class="app-form-control" name="Mensaje" placeholder="Mensaje...">
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button class="app-form-button">Envíar</button>
+                      </div>
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+    </div> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
