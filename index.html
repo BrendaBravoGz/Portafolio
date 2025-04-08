@@ -1,334 +1,241 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Portafolio</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-    <link rel="shortcut icon" href="imagenes/astronaut.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brenda Bravo | Portafolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6843609175.js" crossorigin="anonymous"></script>
 
-  </head>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#" style="font-family: 'Sacramento'">Brenda Bravo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="#">Inicio </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre mí</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Proyectos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#">Contacto</a>
-        </li>
-      </ul>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-indigo-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg sticky top-0 z-50">
+    <h1 class="text-3xl font-extrabold text-white transition-transform transform hover:scale-110">
+      <span class="text-indigo-100">Brenda</span> Bravo
+    </h1>
+    <nav class="space-x-8 text-sm font-semibold text-white">
+      <a href="#sobre-mi" class="transition-colors hover:text-indigo-200 hover:underline">Sobre mí</a>
+      <a href="#skills" class="transition-colors hover:text-indigo-200 hover:underline">Skills</a>
+      <a href="#proyectos" class="transition-colors hover:text-indigo-200 hover:underline">Proyectos</a>
+      <a href="#contacto" class="transition-colors hover:text-indigo-200 hover:underline">Contacto</a>
+    </nav>
+
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 px-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white" data-aos="fade-up">
+    <img src="imagenes/profile.png" alt="Brenda Bravo" class="w-48 h-48 mx-auto rounded-full shadow-xl border-4 border-white transform hover:scale-105 transition duration-300" />
+    <h2 class="text-5xl font-extrabold mt-6">Brenda Bravo</h2>
+    <p class="text-lg font-medium mt-2">Ing. en Tecnología de Software</p>
+    <p class="text-sm text-indigo-200 mt-1 flex justify-center items-center gap-2"><i class="fas fa-map-marker-alt"></i> Monterrey, Nuevo León</p>
+    <a href="Documentos/CV_BrendaBravo.pdf" download class="inline-block mt-6 bg-indigo-700 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-indigo-800 transition duration-300 transform hover:scale-105">Descargar CV</a>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="max-w-4xl mx-auto my-10 py-16 px-6 bg-white shadow-lg rounded-xl" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-8">Sobre mí</h3>
+    <p class="text-lg text-gray-700 leading-relaxed text-justify">
+      Apasionada por convertir diseños en experiencias digitales envolventes. Desarrolladora front-end que
+      busca combinar funcionalidad con estética, creando interfaces de usuario atractivas y fáciles de usar.
+      Con un profundo interés en el diseño de experiencia de usuario (UX/UI), mi enfoque abarca desde la
+      maquetación creativa hasta la implementación de soluciones avanzadas. Mi objetivo es fusionar la
+      programación y el diseño para lograr productos digitales visualmente atractivos y altamente
+      funcionales.
+    </p>
+  </section>
+
+  <!-- Skills Técnicas -->
+  <section id="skills" class="bg-gradient-to-r from-indigo-500 to-purple-600 py-20 px-6 text-white" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold text-center mb-12">Skills Técnicas</h3>
+    <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">HTML</h4>
+        <p class="text-sm text-gray-600">Avanzado</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">CSS</h4>
+        <p class="text-sm text-gray-600">Avanzado</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">JavaScript</h4>
+        <p class="text-sm text-gray-600">Avanzado</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">React</h4>
+        <p class="text-sm text-gray-600">Avanzado</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">Node.js</h4>
+        <p class="text-sm text-gray-600">Básico</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">Git</h4>
+        <p class="text-sm text-gray-600">Avanzado</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">MySQL</h4>
+        <p class="text-sm text-gray-600">Intermedio</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">MongoDB</h4>
+        <p class="text-sm text-gray-600">Básico</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">Twilio</h4>
+        <p class="text-sm text-gray-600">Básico</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">Firebase</h4>
+        <p class="text-sm text-gray-600">Básico</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">Stripe</h4>
+        <p class="text-sm text-gray-600">Básico</p>
+      </div>
+      <!-- Skill Item -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
+        <h4 class="font-semibold text-indigo-600 text-xl">Conecta</h4>
+        <p class="text-sm text-gray-600">Básico</p>
+      </div>
     </div>
-  </nav>
-  <body>
-    <img class="img-perfil" src="imagenes/profile.png">
-    <h1 class="text-center display-2" style="font-family: 'Sacramento'">Brenda Bravo</h1>
-    <h4 class="text-center" style="font-family: 'Sanchez'">Ing. Tecnología de Software</h4>
+  </section>
 
-    <h6 class="text-center" style="font-family: 'Sanchez'"> <i class="fas fa-map-marker-alt"></i> Apodaca, Nuevo Léon </i>   </h6>
 
-    <div class="container">
-      <hr style="border-width:2px; background-color: #252525;">
-        <div class="row" style="background-color: #f6f6f6; padding: 2%; margin:2%">
-          <div class="col-sm-12">
-            <p class="text-center" style="font-size: 28px; font-family: 'Sanchez'">Sobre mi</p>
-            <p style="font-size: 18px;" class="text-justify">Soy una persona creativa, comprometida con el trabajo y habilidades de trabajo en equipo, tengo una gran pasión por las nuevas tecnologías y el desarrollo de estas, así como estar en constante actualización para tener un mejor desarrollo profesional.</p> 
-          </div>
-          <div class="boton-cv">
-            <a href="Documentos/Brenda Bravo CV.pdf" download="Brenda Bravo CV.pdf">
-              Descargar CV 
-            </a>
+  <!-- Soft Skills -->
+  <section class="py-20 px-6 bg-indigo-50" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-12">Soft Skills</h3>
+    <div class="flex flex-wrap justify-center gap-8">
+      <!-- Soft Skill Item -->
+      <div class="flex flex-col items-center w-40 bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+        <i class="fas fa-users text-4xl text-indigo-500 mb-4"></i>
+        <p class="text-indigo-700 font-semibold text-lg">Trabajo en equipo</p>
+      </div>
+      <!-- Soft Skill Item -->
+      <div class="flex flex-col items-center w-40 bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+        <i class="fas fa-lightbulb text-4xl text-indigo-500 mb-4"></i>
+        <p class="text-indigo-700 font-semibold text-lg">Creatividad</p>
+      </div>
+      <!-- Soft Skill Item -->
+      <div class="flex flex-col items-center w-40 bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+        <i class="fas fa-brain text-4xl text-indigo-500 mb-4"></i>
+        <p class="text-indigo-700 font-semibold text-lg">Pensamiento crítico</p>
+      </div>
+      <!-- Soft Skill Item -->
+      <div class="flex flex-col items-center w-40 bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+        <i class="fas fa-comments text-4xl text-indigo-500 mb-4"></i>
+        <p class="text-indigo-700 font-semibold text-lg">Comunicación</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="max-w-6xl mx-auto py-20 px-6  bg-indigo-50" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-12">Proyectos</h3>
+    <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <!-- Proyecto 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+        <img src="imagenes/Proyectos/programacion-juegogato.png" alt="Juego Gato" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-semibold text-xl text-indigo-700">Juego del Gato</h4>
+          <p class="text-sm text-gray-600 mt-2">HTML, CSS, JS</p>
         </div>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+        <img src="imagenes/Proyectos/programacion-todolist.png" alt="ToDo List" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-semibold text-xl text-indigo-700">ToDo List</h4>
+          <p class="text-sm text-gray-600 mt-2">JavaScript, LocalStorage</p>
         </div>
-      <hr style="border-width:2px; background-color: #252525;">
-      <!-- Contenedor Skills -->
-        <div class="row" style="background-color: #f6f6f6; padding: 2%; margin:2%">
-          <div class="col-sm-12">
-            <p class="text-center" style="font-size: 28px; font-family: 'Sanchez'">Skills</p>
-          </div>
-          <!-- Skills - HTML -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"><i class="fab fa-html5"></i>   </h3>
-                <p class="card-text">Inetrmedio </p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - CSS3 -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"><i class="fab fa-css3-alt"></i> </h3>
-                <p class="card-text">Intermedio</p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - JS -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"> <i class="fab fa-js-square"></i> </h3>
-                <p class="card-text">Intermedio</p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - PHP -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"> <i class="fab fa-php"></i> </h3>
-                <p class="card-text">Intermedio</p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - MySql -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"> <img style="width: 100px;" src="imagenes/skills/mysql.png"/> </h3>
-                <p class="card-text">Intermedio</p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - ReactJS -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"> <i class="fab fa-react"></i> </h3>
-                <p class="card-text">Básico</p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - Python -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"> <i class="fab fa-python"></i> </h3>
-                <p class="card-text">Básico</p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - Java -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"> <i class="fab fa-java"></i> </h3>
-                <p class="card-text">Básico</p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - Github -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"> <i class="fab fa-github"></i> </h3>
-                <p class="card-text">Básico</p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - Postman -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"> <img style="width: 100px;" src="imagenes/skills/postman.png"/> </h3>
-                <p class="card-text">Básico</p>
-              </div>
-            </div>
-          </div>
-          <!-- Skills - Figma -->
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title"> <i class="fab fa-figma"></i> </h3>
-                <p class="card-text">Intermedio</p>
-              </div>
-            </div>
-          </div>
+      </div>
+      <!-- Proyecto 3 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+        <img src="imagenes/Proyectos/programacion-juegoPPT.png" alt="Piedra Papel Tijera" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-semibold text-xl text-indigo-700">Piedra, Papel o Tijera</h4>
+          <p class="text-sm text-gray-600 mt-2">JS Interactivo</p>
         </div>
-        <hr style="border-width:2px; background-color: #252525;">
-        <!-- Contenedor Proyectos -->
-        <div class="row" style="background-color: #f6f6f6; padding: 2%; margin:2%">
-          <div class="col-sm-12">
-            <p class="text-center" style="font-size: 28px; font-family: 'Sanchez'">Proyectos</p>
-          </div>
-          
-            <div class="col-sm-4">
-              <div class="card">
-              <img class="card-img-top" src="imagenes/Proyectos/programacion-juegogato.png" alt="">
-              <div class="card-body">
-                <p class="card-title">
-                  <p style="font-size: 18px; font-family: 'Sanchez'">Skills</p>
-                  <hr>
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-html5"></i>
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-css3-alt"></i>
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-js-square"></i>
-                  <hr>
-                </p>
-                <p class="card-text">
-                  <a style="text-decoration: none; color:#252525" href="https://github.com/BrendaBravoGz/Juego-Gato">
-                    <i style="font-size: 20px;" class="fab fa-github"></i>
-                  </a>
-                </p>
-              </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-indigo-50 py-16 px-6" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-12">Contacto</h3>
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white shadow-lg rounded-lg p-8">
+        <form name="Contacto" method="POST" data-netlify="true" class="space-y-8">
+          <!-- Nombre y Correo -->
+          <div class="flex flex-col sm:flex-row gap-8">
+            <div class="flex-1">
+              <label for="Nombre" class="text-gray-700 font-semibold">Nombre</label>
+              <div class="relative mt-2">
+                <input type="text" name="Nombre" id="Nombre" placeholder="Tu nombre" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition">
+                <i class="fas fa-user absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
               </div>
             </div>
-
-            <div class="col-sm-4">
-              <div class="card">
-              <img class="card-img-top" src="imagenes/Proyectos/programacion-tiendaphp.png" alt="">
-              <div class="card-body">
-                <p class="card-title">
-                  <p style="font-size: 18px; font-family: 'Sanchez'">Skills</p>
-                  <hr>
-                  <div style="display: flex; justify-content: center; align-items: center;">
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-html5"></i>
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-css3-alt"></i>
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-php"></i>
-                  <img style="width: 50px;" src="imagenes/skills/mysql.png"/>
-                </div>
-                  <hr>
-                </p>
-                <p class="card-text">
-                  <a style="text-decoration: none; color:#252525" href="https://github.com/BrendaBravoGz/TiendaPHP">
-                    <i style="font-size: 20px;" class="fab fa-github"></i>
-                  </a>
-                </p>
-              </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="card">
-              <img class="card-img-top" src="imagenes/Proyectos/programacion-todolist.png" alt="">
-              <div class="card-body">
-                <p class="card-title">
-                  <p style="font-size: 18px; font-family: 'Sanchez'">Skills</p>
-                  <hr>
-                  <div style="display: flex; justify-content: center; align-items: center;">
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-react"></i>
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-html5"></i>
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-css3-alt"></i>
-                </div>
-                  <hr>
-                </p>
-                <p class="card-text">
-                  <a style="text-decoration: none; color:#252525" href="https://github.com/BrendaBravoGz/MyTodoList">
-                    <i style="font-size: 20px;" class="fab fa-github"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="card">
-              <img class="card-img-top" src="imagenes/Proyectos/programacion-juegoPPT.png" alt="">
-              <div class="card-body">
-                <p class="card-title">
-                  <p style="font-size: 18px; font-family: 'Sanchez'">Skills</p>
-                  <hr>
-                  <div style="display: flex; justify-content: center; align-items: center;">
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-html5"></i>
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-css3-alt"></i>
-                  <i style="font-size: 50px; padding: 10px;" class="fab fa-js-square"></i>
-                </div>
-                  <hr>
-                </p>
-                <p class="card-text">
-                  <a style="text-decoration: none; color:#252525" href="https://github.com/BrendaBravoGz/MyTodoList">
-                    <i style="font-size: 20px;" class="fab fa-github"></i>
-                  </a>
-                </p>
-              </div>
-              </div>
-          </div>
-        </div>
-        <hr style="border-width:2px; background-color: #252525;">
-        <!-- Contenedor Contacto -->
-        <div class="row" style="background-color: #f6f6f6; padding: 2%; margin:2%">
-          <div class="col-sm-12">
-            <p class="text-center" style="font-size: 28px; font-family: 'Sanchez'">Contacto</p>
-          </div>
-          <div class="col-sm-12">
-              <div class="screen" style="font-family: 'Sanchez'">
-                <div class="screen-header">
-                  <div class="screen-header-left">
-                    <div class="screen-header-button close"></div>
-                    <div class="screen-header-button maximize"></div>
-                    <div class="screen-header-button minimize"></div>
-                  </div>
-                  <div class="screen-header-right">
-                    <div class="screen-header-ellipsis"></div>
-                    <div class="screen-header-ellipsis"></div>
-                    <div class="screen-header-ellipsis"></div>
-                  </div>
-                </div>
-                <div class="screen-body">
-                  <div class="screen-body-item left">
-                    <div class="app-title">
-                      <span>Contacto</span>
-                    </div>
-                    <div class="app-contact">Información de contacto: 
-                      <br>ceci.bravo@live.com.mx
-                      <br><i class="fab fa-github"> /BrendaBravoGz</i>
-                      <i class="fab fa-linkedin"> /BrendaBravoGz</i>
-                    </div>
-
-                  </div>
-                  <div class="screen-body-item">
-                    <form name="Contacto" method="post" data-netlify="true">
-                    <div class="app-form">
-                      <div class="app-form-group">
-                        <input class="app-form-control" name="Nombre" placeholder="Nombre">
-                      </div>
-                      <div class="app-form-group">
-                        <input class="app-form-control" name="CorreoElectronico" placeholder="Correo electrónico">
-                      </div>
-                      <div class="app-form-group">
-                        <input class="app-form-control" name="NumeroContacto" placeholder="Número de contacto">
-                      </div>
-                      <div class="app-form-group message">
-                        <input class="app-form-control" name="Mensaje" placeholder="Mensaje ...">
-                      </div>
-                      <div class="app-form-group buttons">
-                        <button class="app-form-button">Envíar</button>
-                      </div>
-                    </div>
-                  </form>
-                  </div>
-                </div>
+            <div class="flex-1">
+              <label for="CorreoElectronico" class="text-gray-700 font-semibold">Correo Electrónico</label>
+              <div class="relative mt-2">
+                <input type="email" name="CorreoElectronico" id="CorreoElectronico" placeholder="Tu correo electrónico" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition">
+                <i class="fas fa-envelope absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
               </div>
             </div>
           </div>
+          <!-- Número de contacto -->
+          <div>
+            <label for="NumeroContacto" class="text-gray-700 font-semibold">Número de Contacto</label>
+            <div class="relative mt-2">
+              <input type="text" name="NumeroContacto" id="NumeroContacto" placeholder="Tu número de teléfono" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition">
+              <i class="fas fa-phone-alt absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
           </div>
-    </div> 
+          <!-- Mensaje -->
+          <div>
+            <label for="Mensaje" class="text-gray-700 font-semibold">Mensaje</label>
+            <div class="relative mt-2">
+              <textarea name="Mensaje" id="Mensaje" placeholder="Escribe tu mensaje..." rows="6" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition"></textarea>
+              <i class="fas fa-comment-dots absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+          </div>
+          <!-- Botón Enviar -->
+          <button type="submit" class="w-full bg-indigo-500 text-white py-3 rounded-lg hover:bg-indigo-600 transition">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+
+  <footer class="text-center text-gray-400 text-sm py-4">
+    &copy; 2025 Brenda Bravo. Todos los derechos reservados.
+  </footer>
+
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>
