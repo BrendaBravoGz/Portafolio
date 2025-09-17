@@ -3,252 +3,647 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brenda Bravo | Portafolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Brenda Bravo | Desarrolladora de Aplicaciones</title>
+  
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Iconos -->
   <link rel="icon" href="./imagenes/heart.ico" type="image/x-icon">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6843609175.js" crossorigin="anonymous"></script>
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
+  
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="estilos_new.css">
 </head>
-<body class="bg-gradient-to-b from-slate-50 to-indigo-100 text-gray-800">
+<<body>
+  
+  <!-- Navegación minimalista -->
+  <nav class="nav-modern">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-name">Brenda Bravo</span>
+        <span class="brand-title">Dev</span>
+      </div>
+      
+      <div class="nav-menu" id="nav-menu">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </div>
+      
+      <button class="nav-toggle" id="nav-toggle">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+    </div>
+  </nav>
 
-  <!-- Header -->
-  <header class="p-6 flex justify-between items-center bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg sticky top-0 z-50">
-    <h1 class="text-3xl font-extrabold text-white transition-transform transform hover:scale-110">
-      <span class="text-indigo-100">Brenda</span> Bravo
-    </h1>
-    <nav class="space-x-8 text-sm font-semibold text-white">
-      <a href="#sobre-mi" class="transition-colors hover:text-indigo-200 hover:underline">Sobre mí</a>
-      <a href="#skills" class="transition-colors hover:text-indigo-200 hover:underline">Skills</a>
-      <a href="#proyectos" class="transition-colors hover:text-indigo-200 hover:underline">Proyectos</a>
-      <a href="#contacto" class="transition-colors hover:text-indigo-200 hover:underline">Contacto</a>
-    </nav>
-
-  </header>
-
-  <!-- Hero -->
-  <section class="text-center py-20 px-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white" data-aos="fade-up">
-    <img src="imagenes/profile.png" alt="Brenda Bravo" class="w-48 h-48 mx-auto rounded-full shadow-xl border-4 border-white transform hover:scale-105 transition duration-300" />
-    <h2 class="text-5xl font-extrabold mt-6">Brenda Bravo</h2>
-    <p class="text-lg font-medium mt-2">Ing. en Tecnología de Software</p>
-    <p class="text-sm text-indigo-200 mt-1 flex justify-center items-center gap-2"><i class="fas fa-map-marker-alt"></i> Monterrey, Nuevo León</p>
-    <a href="Documentos/CV_BrendaBravo.pdf" download class="inline-block mt-6 bg-indigo-700 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-indigo-800 transition duration-300 transform hover:scale-105">Descargar CV</a>
+  <!-- Hero Section - Presentación Personal -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-image-wrapper">
+          <img src="imagenes/profile.png" alt="Brenda Bravo" class="hero-image" />
+          <div class="hero-image-accent"></div>
+        </div>
+        
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hola, soy <span class="hero-highlight">Brenda Bravo</span>
+          </h1>
+          <h2 class="hero-subtitle">Desarrolladora de Aplicaciones</h2>
+          <p class="hero-description">
+            Especializada en crear experiencias digitales innovadoras, combinando 
+            diseño elegante con funcionalidad avanzada. Transformo ideas en aplicaciones 
+            que conectan y emocionan a los usuarios.
+          </p>
+          
+          <div class="hero-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Monterrey, Nuevo León</span>
+          </div>
+          
+          <div class="hero-actions">
+            <a href="Documentos/CV_BrendaBravo.pdf" download class="btn btn-primary">
+              <i class="fas fa-download"></i>
+              Descargar CV
+            </a>
+            <a href="#contacto" class="btn btn-outline">
+              <i class="fas fa-envelope"></i>
+              Contáctame
+            </a>
+          </div>
+          
+          <div class="hero-social">
+            <a href="https://github.com/BrendaBravoGz" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/BrendaBravoGz" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Elemento decorativo animado -->
+      <div class="hero-decoration">
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+      </div>
+    </div>
   </section>
 
   <!-- Sobre mí -->
-  <section id="sobre-mi" class="max-w-4xl mx-auto my-10 py-16 px-6 bg-white shadow-lg rounded-xl" data-aos="fade-up">
-    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-8">Sobre mí</h3>
-    <p class="text-lg text-gray-700 leading-relaxed text-justify">
-      Apasionada por convertir diseños en experiencias digitales envolventes. Desarrolladora front-end que
-      busca combinar funcionalidad con estética, creando interfaces de usuario atractivas y fáciles de usar.
-      Con un profundo interés en el diseño de experiencia de usuario (UX/UI), mi enfoque abarca desde la
-      maquetación creativa hasta la implementación de soluciones avanzadas. Mi objetivo es fusionar la
-      programación y el diseño para lograr productos digitales visualmente atractivos y altamente
-      funcionales.
-    </p>
-  </section>
-
-  <!-- Skills Técnicas -->
-  <section id="skills" class="bg-gradient-to-r from-indigo-500 to-purple-600 py-20 px-6 text-white" data-aos="fade-up">
-    <h3 class="text-3xl font-semibold text-center mb-12">Skills Técnicas</h3>
-    <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">HTML</h4>
-        <p class="text-sm text-gray-600">Avanzado</p>
+  <section id="sobre-mi" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sobre mí</h2>
+        <p class="section-subtitle">Conoce mi pasión por el desarrollo</p>
       </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">CSS</h4>
-        <p class="text-sm text-gray-600">Avanzado</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">JavaScript</h4>
-        <p class="text-sm text-gray-600">Avanzado</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">React</h4>
-        <p class="text-sm text-gray-600">Avanzado</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">Node.js</h4>
-        <p class="text-sm text-gray-600">Básico</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">Git</h4>
-        <p class="text-sm text-gray-600">Avanzado</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">MySQL</h4>
-        <p class="text-sm text-gray-600">Intermedio</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">MongoDB</h4>
-        <p class="text-sm text-gray-600">Básico</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">Twilio</h4>
-        <p class="text-sm text-gray-600">Básico</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">Firebase</h4>
-        <p class="text-sm text-gray-600">Básico</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">Stripe</h4>
-        <p class="text-sm text-gray-600">Básico</p>
-      </div>
-      <!-- Skill Item -->
-      <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:scale-105 transition duration-300">
-        <h4 class="font-semibold text-indigo-600 text-xl">Conecta</h4>
-        <p class="text-sm text-gray-600">Básico</p>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-paragraph">
+            Como <strong>Ingeniera en Tecnología de Software</strong>, mi pasión radica en convertir 
+            diseños creativos en experiencias digitales envolventes. Me especializo en desarrollo 
+            front-end, buscando siempre esa perfecta armonía entre funcionalidad y estética.
+          </p>
+          <p class="about-paragraph">
+            Mi enfoque abarca desde la conceptualización UX/UI hasta la implementación de soluciones 
+            avanzadas. Cada proyecto es una oportunidad para fusionar programación y diseño, 
+            creando productos digitales que no solo funcionan perfectamente, sino que también 
+            inspiran y deleitan a los usuarios.
+          </p>
+          
+          <div class="about-values">
+            <div class="value-item">
+              <div class="value-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4>Innovación</h4>
+              <p>Siempre buscando nuevas formas de resolver problemas</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h4>Diseño</h4>
+              <p>Creando interfaces elegantes y funcionales</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Código</h4>
+              <p>Escribiendo soluciones limpias y eficientes</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Proyectos Destacados -->
+  <section id="proyectos" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">Algunas de mis creaciones más recientes</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card featured">
+          <div class="project-image">
+            <img src="imagenes/Proyectos/programacion-juegogato.png" alt="Juego del Gato" />
+            <div class="project-overlay">
+              <div class="project-actions">
+                <button class="btn-icon">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-icon">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Juego del Gato</h3>
+            <p class="project-description">
+              Juego interactivo desarrollado con JavaScript vanilla, 
+              featuring animaciones suaves y lógica inteligente de IA.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
 
-  <!-- Soft Skills -->
-  <section class="py-20 px-6 bg-indigo-50" data-aos="fade-up">
-    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-12">Soft Skills</h3>
-    <div class="flex flex-wrap justify-center gap-8">
-      <!-- Soft Skill Item -->
-      <div class="flex flex-col items-center w-40 bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-        <i class="fas fa-users text-4xl text-indigo-500 mb-4"></i>
-        <p class="text-indigo-700 font-semibold text-lg">Trabajo en equipo</p>
-      </div>
-      <!-- Soft Skill Item -->
-      <div class="flex flex-col items-center w-40 bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-        <i class="fas fa-lightbulb text-4xl text-indigo-500 mb-4"></i>
-        <p class="text-indigo-700 font-semibold text-lg">Creatividad</p>
-      </div>
-      <!-- Soft Skill Item -->
-      <div class="flex flex-col items-center w-40 bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-        <i class="fas fa-brain text-4xl text-indigo-500 mb-4"></i>
-        <p class="text-indigo-700 font-semibold text-lg">Pensamiento crítico</p>
-      </div>
-      <!-- Soft Skill Item -->
-      <div class="flex flex-col items-center w-40 bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
-        <i class="fas fa-comments text-4xl text-indigo-500 mb-4"></i>
-        <p class="text-indigo-700 font-semibold text-lg">Comunicación</p>
+        <!-- Proyecto 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imagenes/Proyectos/programacion-todolist.png" alt="ToDo List App" />
+            <div class="project-overlay">
+              <div class="project-actions">
+                <button class="btn-icon">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-icon">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ToDo List App</h3>
+            <p class="project-description">
+              Aplicación de gestión de tareas con persistencia local 
+              y interfaz minimalista.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">LocalStorage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imagenes/Proyectos/programacion-juegoPPT.png" alt="Piedra Papel Tijera" />
+            <div class="project-overlay">
+              <div class="project-actions">
+                <button class="btn-icon">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-icon">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Piedra, Papel o Tijera</h3>
+            <p class="project-description">
+              Clásico juego reimaginado con efectos visuales modernos 
+              y sistema de puntuación.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Animations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imagenes/Proyectos/programacion-imc.png" alt="Calculadora IMC" />
+            <div class="project-overlay">
+              <div class="project-actions">
+                <button class="btn-icon">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-icon">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Calculadora IMC</h3>
+            <p class="project-description">
+              Herramienta de salud con visualización de datos 
+              y recomendaciones personalizadas.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Charts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imagenes/Proyectos/programacion-tiendaphp.png" alt="Tienda Online" />
+            <div class="project-overlay">
+              <div class="project-actions">
+                <button class="btn-icon">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-icon">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Platform</h3>
+            <p class="project-description">
+              Plataforma de comercio electrónico completa con 
+              carrito de compras y sistema de pagos.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">PayPal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imagenes/Proyectos/programacion-login.png" alt="Sistema de Login" />
+            <div class="project-overlay">
+              <div class="project-actions">
+                <button class="btn-icon">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-icon">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Sistema de Autenticación</h3>
+            <p class="project-description">
+              Sistema seguro de login con validación en tiempo real 
+              y recuperación de contraseña.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Security</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Experiencia y Habilidades -->
+  <section id="experiencia" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experiencia & Habilidades</h2>
+        <p class="section-subtitle">Mi arsenal tecnológico y competencias</p>
+      </div>
+      
+      <div class="skills-content">
+        <!-- Skills Técnicas -->
+        <div class="skills-category">
+          <h3 class="skills-category-title">
+            <i class="fas fa-code"></i>
+            Tecnologías
+          </h3>
+          <div class="tech-stack">
+            <div class="tech-item expert">
+              <div class="tech-logo"><i class="fab fa-html5"></i></div>
+              <div class="tech-info"><h4>HTML</h4><span class="tech-level expert">Avanzado</span></div>
+            </div>
+            <div class="tech-item expert">
+              <div class="tech-logo"><i class="fab fa-css3-alt"></i></div>
+              <div class="tech-info"><h4>CSS</h4><span class="tech-level expert">Avanzado</span></div>
+            </div>
+            <div class="tech-item expert">
+              <div class="tech-logo"><i class="fab fa-js"></i></div>
+              <div class="tech-info"><h4>JavaScript</h4><span class="tech-level expert">Avanzado</span></div>
+            </div>
+            <div class="tech-item expert">
+              <div class="tech-logo"><i class="fab fa-react"></i></div>
+              <div class="tech-info"><h4>React</h4><span class="tech-level expert">Avanzado</span></div>
+            </div>
+            <div class="tech-item basic">
+              <div class="tech-logo"><i class="fab fa-node-js"></i></div>
+              <div class="tech-info"><h4>Node.js</h4><span class="tech-level basic">Básico</span></div>
+            </div>
+            <div class="tech-item expert">
+              <div class="tech-logo"><i class="fab fa-git-alt"></i></div>
+              <div class="tech-info"><h4>Git</h4><span class="tech-level expert">Avanzado</span></div>
+            </div>
+            <div class="tech-item intermediate">
+              <div class="tech-logo"><i class="fas fa-database"></i></div>
+              <div class="tech-info"><h4>MySQL</h4><span class="tech-level intermediate">Intermedio</span></div>
+            </div>
+            <div class="tech-item basic">
+              <div class="tech-logo"><i class="fas fa-leaf"></i></div>
+              <div class="tech-info"><h4>MongoDB</h4><span class="tech-level basic">Básico</span></div>
+            </div>
+            <div class="tech-item basic">
+              <div class="tech-logo"><i class="fas fa-comment-dots"></i></div>
+              <div class="tech-info"><h4>Twilio</h4><span class="tech-level basic">Básico</span></div>
+            </div>
+            <div class="tech-item basic">
+              <div class="tech-logo"><i class="fas fa-fire"></i></div>
+              <div class="tech-info"><h4>Firebase</h4><span class="tech-level basic">Básico</span></div>
+            </div>
+            <div class="tech-item basic">
+              <div class="tech-logo"><i class="fas fa-credit-card"></i></div>
+              <div class="tech-info"><h4>Stripe</h4><span class="tech-level basic">Básico</span></div>
+            </div>
+            <div class="tech-item basic">
+              <div class="tech-logo"><i class="fas fa-link"></i></div>
+              <div class="tech-info"><h4>Conecta</h4><span class="tech-level basic">Básico</span></div>
+            </div>
+            <!-- Nueva experiencia: compras y suscripciones -->
+            <div class="tech-item highlight">
+              <div class="tech-logo"><i class="fab fa-google-pay"></i></div>
+              <div class="tech-info">
+                <h4>IAP Google Play & Apple Store</h4>
+                <span class="tech-level highlight">Intermedio</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- Proyectos -->
-  <section id="proyectos" class="max-w-6xl mx-auto py-20 px-6  bg-indigo-50" data-aos="fade-up">
-    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-12">Proyectos</h3>
-    <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-      <!-- Proyecto 1 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
-        <img src="imagenes/Proyectos/programacion-juegogato.png" alt="Juego Gato" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h4 class="font-semibold text-xl text-indigo-700">Juego del Gato</h4>
-          <p class="text-sm text-gray-600 mt-2">HTML, CSS, JS</p>
-        </div>
-      </div>
-      <!-- Proyecto 2 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
-        <img src="imagenes/Proyectos/programacion-todolist.png" alt="ToDo List" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h4 class="font-semibold text-xl text-indigo-700">ToDo List</h4>
-          <p class="text-sm text-gray-600 mt-2">JavaScript</p>
-        </div>
-      </div>
-      <!-- Proyecto 3 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
-        <img src="imagenes/Proyectos/programacion-juegoPPT.png" alt="Piedra Papel Tijera" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h4 class="font-semibold text-xl text-indigo-700">Piedra, Papel o Tijera</h4>
-          <p class="text-sm text-gray-600 mt-2">JavaScript</p>
+        <!-- Soft Skills -->
+        <div class="skills-category">
+          <h3 class="skills-category-title">
+            <i class="fas fa-brain"></i>
+            Competencias
+          </h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Trabajo en Equipo</h4>
+              <p>Colaboración efectiva en equipos multidisciplinarios</p>
+            </div>
+
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4>Creatividad</h4>
+              <p>Soluciones innovadoras y pensamiento lateral</p>
+            </div>
+
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h4>Pensamiento Crítico</h4>
+              <p>Análisis profundo y resolución de problemas complejos</p>
+            </div>
+
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h4>Comunicación</h4>
+              <p>Comunicación clara y efectiva con stakeholders</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="bg-indigo-50 py-16 px-6" data-aos="fade-up">
-    <h3 class="text-3xl font-semibold text-center text-indigo-600 mb-12">Contacto</h3>
-    <div class="max-w-4xl mx-auto">
-      <div class="bg-white shadow-lg rounded-lg p-8">
-        <form name="Contacto" method="POST" data-netlify="true" class="space-y-8">
-          <!-- Nombre y Correo -->
-          <div class="flex flex-col sm:flex-row gap-8">
-            <div class="flex-1">
-              <label for="Nombre" class="text-gray-700 font-semibold">Nombre</label>
-              <div class="relative mt-2">
-                <input type="text" name="Nombre" id="Nombre" placeholder="Tu nombre" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition">
-                <i class="fas fa-user absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Hablemos</h2>
+        <p class="section-subtitle">¿Tienes un proyecto en mente? Conectemos y creemos algo increíble juntos</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>brendabravo@email.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Teléfono</h4>
+              <p>+52 (81) 1234-5678</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Ubicación</h4>
+              <p>Monterrey, Nuevo León</p>
+            </div>
+          </div>
+          
+          <div class="contact-social">
+            <a href="https://github.com/BrendaBravoGz" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/BrendaBravoGz" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:brendabravo@email.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-form-wrapper">
+          <form name="Contacto" method="POST" data-netlify="true" class="contact-form">
+            <div class="form-group">
+              <div class="form-field">
+                <input type="text" name="Nombre" id="Nombre" placeholder="Tu nombre" required>
+                <label for="Nombre">Nombre</label>
+              </div>
+              
+              <div class="form-field">
+                <input type="email" name="CorreoElectronico" id="CorreoElectronico" placeholder="tu@email.com" required>
+                <label for="CorreoElectronico">Email</label>
               </div>
             </div>
-            <div class="flex-1">
-              <label for="CorreoElectronico" class="text-gray-700 font-semibold">Correo Electrónico</label>
-              <div class="relative mt-2">
-                <input type="email" name="CorreoElectronico" id="CorreoElectronico" placeholder="Tu correo electrónico" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition">
-                <i class="fas fa-envelope absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-              </div>
+            
+            <div class="form-field">
+              <input type="tel" name="NumeroContacto" id="NumeroContacto" placeholder="Tu número de teléfono">
+              <label for="NumeroContacto">Teléfono</label>
             </div>
-          </div>
-          <!-- Número de contacto -->
-          <div>
-            <label for="NumeroContacto" class="text-gray-700 font-semibold">Número de Contacto</label>
-            <div class="relative mt-2">
-              <input type="text" name="NumeroContacto" id="NumeroContacto" placeholder="Tu número de teléfono" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition">
-              <i class="fas fa-phone-alt absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            
+            <div class="form-field">
+              <textarea name="Mensaje" id="Mensaje" placeholder="Cuéntame sobre tu proyecto..." rows="5" required></textarea>
+              <label for="Mensaje">Mensaje</label>
             </div>
-          </div>
-          <!-- Mensaje -->
-          <div>
-            <label for="Mensaje" class="text-gray-700 font-semibold">Mensaje</label>
-            <div class="relative mt-2">
-              <textarea name="Mensaje" id="Mensaje" placeholder="Escribe tu mensaje..." rows="6" class="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 transition"></textarea>
-              <i class="fas fa-comment-dots absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-            </div>
-          </div>
-          <!-- Botón Enviar -->
-          <button type="submit" class="w-full bg-indigo-500 text-white py-3 rounded-lg hover:bg-indigo-600 transition">Enviar</button>
-        </form>
+            
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Enviar Mensaje</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
       </div>
-          <!-- Redes sociales -->
-    <div class="text-center text-sm text-gray-600 mt-8">
-      <p class="mb-2">También puedes contactarme a través de mis redes sociales:</p>
-      <div class="flex justify-center gap-8">
-        <a href="https://github.com/BrendaBravoGz" class="text-indigo-600 hover:text-indigo-800 transition">
-          <i class="fab fa-github text-3xl"></i>
-        </a>
-        <a href="https://linkedin.com/in/BrendaBravoGz" class="text-indigo-600 hover:text-indigo-800 transition">
-          <i class="fab fa-linkedin text-3xl"></i>
-        </a>
-      </div>
-    </div>
     </div>
   </section>
 
-
-
-  <footer class="text-center text-gray-400 text-sm py-4">
-    &copy; 2025 Brenda Bravo. Todos los derechos reservados.
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Brenda Bravo</h3>
+          <p>Desarrolladora de Aplicaciones</p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://github.com/BrendaBravoGz">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/BrendaBravoGz">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Brenda Bravo. Diseñado y desarrollado con <i class="fas fa-heart"></i> en Monterrey.</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <!-- JavaScript para interacciones -->
   <script>
-    AOS.init();
+    // Navegación móvil
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+
+    // Smooth scrolling para navegación
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          
+          // Cerrar menú móvil si está abierto
+          navMenu.classList.remove('active');
+          navToggle.classList.remove('active');
+        }
+      });
+    });
+
+    // Animación de entrada para elementos
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observar elementos para animaciones
+    document.querySelectorAll('.project-card, .skill-item, .about-content, .contact-content').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Efecto parallax ligero en hero
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * -0.5;
+      const heroDecoration = document.querySelector('.hero-decoration');
+      if (heroDecoration) {
+        heroDecoration.style.transform = `translateY(${rate}px)`;
+      }
+    });
+
+    // Animación de typing para el título
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+      const text = heroTitle.innerHTML;
+      heroTitle.innerHTML = '';
+      let i = 0;
+      
+      const typeWriter = () => {
+        if (i < text.length) {
+          heroTitle.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 50);
+        }
+      };
+      
+      setTimeout(typeWriter, 1000);
+    }
   </script>
 </body>
 </html>
